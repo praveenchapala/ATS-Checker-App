@@ -10,8 +10,15 @@ const Tesseract = require('tesseract.js');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+// CORS configuration for production
+const corsOptions = {
+  origin: process.env.CORS_ORIGIN || ['http://localhost:3000', 'https://your-frontend-domain.vercel.app'],
+  credentials: true,
+  optionsSuccessStatus: 200
+};
+
 // Middleware
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 
 // Configure multer for file upload
