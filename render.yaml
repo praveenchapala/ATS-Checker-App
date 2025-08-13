@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: ats-checker-backend
+    env: node
+    plan: free
+    rootDir: server
+    buildCommand: npm install
+    startCommand: npm start
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: CORS_ORIGIN
+        value: https://praveenchapala.github.io/ATS-Checker-App
+
+
