@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "./static/css/main.ad8815e1.css",
-    "main.js": "./static/js/main.e9ddc59e.js",
-    "index.html": "./index.html",
-    "main.ad8815e1.css.map": "./static/css/main.ad8815e1.css.map",
-    "main.e9ddc59e.js.map": "./static/js/main.e9ddc59e.js.map"
+    "main.css": "/ATS-Checker-App/static/css/main.ad8815e1.css",
+    "main.js": "/ATS-Checker-App/static/js/main.b90b2551.js",
+    "index.html": "/ATS-Checker-App/index.html",
+    "main.ad8815e1.css.map": "/ATS-Checker-App/static/css/main.ad8815e1.css.map",
+    "main.b90b2551.js.map": "/ATS-Checker-App/static/js/main.b90b2551.js.map"
   },
   "entrypoints": [
     "static/css/main.ad8815e1.css",
-    "static/js/main.e9ddc59e.js"
+    "static/js/main.b90b2551.js"
   ]
 }
