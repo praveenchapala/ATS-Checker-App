@@ -19,6 +19,7 @@ interface UploadResponse {
 }
 
 function App() {
+  const API_BASE = (process.env.REACT_APP_API_URL || '').replace(/\/$/, '');
   const [file, setFile] = useState<File | null>(null);
   const [analysis, setAnalysis] = useState<ATSAnalysis | null>(null);
   const [loading, setLoading] = useState(false);
@@ -53,7 +54,8 @@ function App() {
     formData.append('resume', file);
 
     try {
-      const response = await axios.post<UploadResponse>('/api/upload', formData, {
+      const url = `${API_BASE}/api/upload`;
+      const response = await axios.post<UploadResponse>(url, formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
